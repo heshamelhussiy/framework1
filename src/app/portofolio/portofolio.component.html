@@ -1,0 +1,98 @@
+<section id="portofolio" c>
+  <div class="container">
+    <div class="header text-center">
+      <h1>PORTFOLIO COMPONENT</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <span class="line"></span>
+        <span><i class="fa-solid fa-star px-3"></i></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="row pt-3 g-4 mb-4">
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img1, innerBox, outerBox)"
+        >
+          <img src="./assets/images/poert1.png" class="w-100" alt="" #img1 />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img2, innerBox, outerBox)"
+        >
+          <img src="./assets/images/port2.png" class="w-100" alt="" #img2 />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img3, innerBox, outerBox)"
+        >
+          <img src="./assets/images/port3.png" class="w-100" alt="" #img3 />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img1, innerBox, outerBox)"
+        >
+          <img src="./assets/images/poert1.png" class="w-100" alt="" />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img2, innerBox, outerBox)"
+        >
+          <img src="./assets/images/port2.png" class="w-100" alt="" />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="layer rounded-2 overflow-hidden"
+          (click)="openImg(img3, innerBox, outerBox)"
+        >
+          <img src="./assets/images/port3.png" class="w-100" alt="" />
+          <div
+            class="over-layer d-flex align-items-center justify-content-center"
+          >
+            <a><i class="text-white fa-solid fa-plus fa-6x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="w-100 h-100 position-fixed top-0 start-0 outerBox d-none"
+    #outerBox
+  >
+    <div class="innerBox" #innerBox></div>
+  </div>
+</section>

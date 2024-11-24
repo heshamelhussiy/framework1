@@ -1,0 +1,14 @@
+.heading {
+  background-color: #1abc9c;
+  color: white;
+  min-height: 100vh;
+}
+h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+img{
+  width: 250px;
+  height: 250px;
+}

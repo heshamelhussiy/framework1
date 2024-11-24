@@ -1,0 +1,71 @@
+<section id="contact">
+  <div class="container">
+    <div class="header text-center">
+      <h1>CONATCT SECTION</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <span class="line"></span>
+        <span><i class="fa-solid fa-star px-3"></i></span>
+        <span class="line" ></span>
+      </div>
+    </div>
+    <div class="form">
+      <div class="formInputBlock">
+        <label for="userName" [class]="nameFlage ? 'showLabel' : 'hideLabel'"
+          >userName:</label
+        >
+        <input
+          #userName
+          type="text"
+          placeholder="userName"
+          class="form-control"
+          id="userName"
+          (input)="inputData(userName)"
+        />
+      </div>
+      <div class="formInputBlock">
+        <label for="userAge" [class]="ageFlag ? 'showLabel' : 'hideLabel'"
+          >userAge:</label
+        >
+        <input
+          type="number"
+          #userAge
+          placeholder="userAge "
+          class="form-control"
+          id="userAge"
+          (input)="inputData(userAge)"
+        />
+      </div>
+      <div class="formInputBlock">
+        <label for="userEmail" [class]="emailFlag ? 'showLabel' : 'hideLabel'"
+          >userEmail:</label
+        >
+        <input
+          type="email"
+          placeholder="userEmail"
+          class="form-control"
+          id="userEmail"
+          #userEmail
+          (input)="inputData(userEmail)"
+        />
+      </div>
+
+      <div class="formInputBlock">
+        <label
+          for="userPassword"
+          [class]="passwordFlag ? 'showLabel' : 'hideLabel'"
+          >userPassword:</label
+        >
+        <input
+          type="password"
+          placeholder="userPassword"
+          class="form-control"
+          id="userPassword"
+          #userPassword
+          (input)="inputData(userPassword)"
+        />
+      </div>
+
+      <button type="submit" class="btn">send Message</button>
+    </div>
+  </div>
+</section>
